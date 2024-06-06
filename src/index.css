@@ -17,7 +17,7 @@
 }
 
 h1 {
-  @apply font-shrikhand text-4xl text-blue-800 text-center;
+  @apply font-shrikhand text-4xl text-blue-800 text-center m-4;
 }
 
 @media screen and (max-width: 900px) {

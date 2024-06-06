@@ -117,11 +117,22 @@ function App() {
 
   return (
     <div className="w-screen h-screen flex items-center justify-center bg-orange-200">
-      <div className="w-1/2 h-2/3 flex flex-col items-center justify-center gap-y-7 p-3 rounded-3xl bg-white drop-shadow-2xl small-container">
+      <div className="w-1/2 h-2/3 flex flex-col items-center justify-center gap-y-10 p-2 rounded-3xl bg-white drop-shadow-2xl small-container">
         {startBtn && (
           <div>
             <h1>Pyramid</h1>
             <h1>TicTacToe</h1>
+            <p className="text-center font-bold pt-5">How to play?</p>
+            <p className="text-center">
+              Player X and O will alternate turns.
+            </p>
+            <p className="w-96 text-center">
+              The first player to get three-in-a-row vertically, horizontally or
+              diagonally wins.
+            </p>
+            <p className="w-96 text-center italic font-semibold">
+              Have Fun!
+            </p>
           </div>
         )}
         {startBtn && (
