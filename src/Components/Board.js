@@ -6,7 +6,7 @@ function Board({ boardMark, handlePlayerChoice, win }) {
             key={pos}
             type="button"
             name={pos}
-            className={`btn-primary row-start-${boardMark[pos][1][0]} col-start-${boardMark[pos][1][1]}`}
+            className={`btn-primary items-center justify-center row-start-${boardMark[pos][1][0]} col-start-${boardMark[pos][1][1]}  col-span-1`}
             onClick={handlePlayerChoice}
             disabled={win === true}
           >
