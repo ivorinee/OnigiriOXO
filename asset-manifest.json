@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "//ivorinee.github.io/Pyramid-TicTacToe/static/css/main.d8a2a332.css",
+    "main.js": "//ivorinee.github.io/Pyramid-TicTacToe/static/js/main.3883fd7c.js",
+    "static/js/453.78094a94.chunk.js": "//ivorinee.github.io/Pyramid-TicTacToe/static/js/453.78094a94.chunk.js",
+    "index.html": "//ivorinee.github.io/Pyramid-TicTacToe/index.html",
+    "main.d8a2a332.css.map": "//ivorinee.github.io/Pyramid-TicTacToe/static/css/main.d8a2a332.css.map",
+    "main.3883fd7c.js.map": "//ivorinee.github.io/Pyramid-TicTacToe/static/js/main.3883fd7c.js.map",
+    "453.78094a94.chunk.js.map": "//ivorinee.github.io/Pyramid-TicTacToe/static/js/453.78094a94.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8a2a332.css",
+    "static/js/main.3883fd7c.js"
+  ]
+}
