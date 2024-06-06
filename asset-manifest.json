@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/OnigiriOXO/static/css/main.ca3f95e2.css",
-    "main.js": "/OnigiriOXO/static/js/main.a58f5677.js",
+    "main.css": "/OnigiriOXO/static/css/main.5a845cf5.css",
+    "main.js": "/OnigiriOXO/static/js/main.a9e56b80.js",
     "static/js/453.78094a94.chunk.js": "/OnigiriOXO/static/js/453.78094a94.chunk.js",
     "static/media/redo-arrow.svg": "/OnigiriOXO/static/media/redo-arrow.342dffb75205013e446a1203b9f01c09.svg",
     "index.html": "/OnigiriOXO/index.html",
-    "main.ca3f95e2.css.map": "/OnigiriOXO/static/css/main.ca3f95e2.css.map",
-    "main.a58f5677.js.map": "/OnigiriOXO/static/js/main.a58f5677.js.map",
+    "main.5a845cf5.css.map": "/OnigiriOXO/static/css/main.5a845cf5.css.map",
+    "main.a9e56b80.js.map": "/OnigiriOXO/static/js/main.a9e56b80.js.map",
     "453.78094a94.chunk.js.map": "/OnigiriOXO/static/js/453.78094a94.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca3f95e2.css",
-    "static/js/main.a58f5677.js"
+    "static/css/main.5a845cf5.css",
+    "static/js/main.a9e56b80.js"
   ]
 }
