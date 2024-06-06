@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Pyramid-TicTacToe/static/css/main.b77f20ab.css",
+    "main.css": "/Pyramid-TicTacToe/static/css/main.be1f930a.css",
     "main.js": "/Pyramid-TicTacToe/static/js/main.0ac7e9c9.js",
     "static/js/453.78094a94.chunk.js": "/Pyramid-TicTacToe/static/js/453.78094a94.chunk.js",
     "static/media/redo-arrow.svg": "/Pyramid-TicTacToe/static/media/redo-arrow.342dffb75205013e446a1203b9f01c09.svg",
     "index.html": "/Pyramid-TicTacToe/index.html",
-    "main.b77f20ab.css.map": "/Pyramid-TicTacToe/static/css/main.b77f20ab.css.map",
+    "main.be1f930a.css.map": "/Pyramid-TicTacToe/static/css/main.be1f930a.css.map",
     "main.0ac7e9c9.js.map": "/Pyramid-TicTacToe/static/js/main.0ac7e9c9.js.map",
     "453.78094a94.chunk.js.map": "/Pyramid-TicTacToe/static/js/453.78094a94.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b77f20ab.css",
+    "static/css/main.be1f930a.css",
     "static/js/main.0ac7e9c9.js"
   ]
 }
