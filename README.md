@@ -12,8 +12,9 @@ Run `runTest.bat` or `npm test` on file location in terminal.
 
 ## Project Structure
 
+- **Game Logic and State Management**: Main application logic and state management are found in `App.js`.
 - **Components**: Located in `./src/Components/`
-- **Tic Tac Toe Logic**: Found in `App.js`
-- **Test Cases**: Found in `App.test.js`
+- **Styles**: Custom CSS styles are defined in `index.css`.
+- **Tests**: Test cases are defined in `App.test.js`.
 
 Enjoy playing Pyramid Tic Tac Toe!
