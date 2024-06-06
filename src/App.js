@@ -1,23 +1,197 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Board from "./Components/Board";
+import "./index.css";
+import GameStatus from "./Components/GameStatus";
+import Button from "./Components/Button";
 
 function App() {
+  const initialBoardState = {
+    position1: ["", [1, 3]],
+    position2: ["", [2, 2]],
+    position3: ["", [2, 3]],
+    position4: ["", [2, 4]],
+    position5: ["", [3, 1]],
+    position6: ["", [3, 2]],
+    position7: ["", [3, 3]],
+    position8: ["", [3, 4]],
+    position9: ["", [3, 5]],
+  };
+
+  const [startBtn, setStartBtn] = useState(true);
+  const [gameOnGoing, setGameOnGoing] = useState(false);
+  const [pyramid, setPyramid] = useState(false);
+  const [currentPlayer, setCurrentPlayer] = useState("X");
+  const [boardMark, setBoardMark] = useState(initialBoardState);
+  const [win, setWin] = useState(false);
+
+  function handleStartClick() {
+    setStartBtn(false);
+    setPyramid(true);
+    setGameOnGoing(true);
+  }
+
+  function handlePlayerChoice(event) {
+    const pos = event.target.name;
+    setBoardMark((prevValue) => {
+      // Check whether grid is empty
+      if (prevValue[pos][0] === "") {
+        const newButtonMark = {
+          ...prevValue,
+          [pos]: [currentPlayer, prevValue[pos][1]],
+        };
+
+        // Check whether player has won or board is full
+        if (checkWin(newButtonMark, currentPlayer)) {
+          setGameOnGoing(false);
+          setWin(true);
+        } else if (isBoardFull(newButtonMark)) {
+          setGameOnGoing(false);
+        } else {
+          setCurrentPlayer((prevPlayer) => (prevPlayer === "X" ? "O" : "X"));
+        }
+
+        return newButtonMark;
+      } else {
+        return prevValue;
+      }
+    });
+  }
+
+  function checkWin(board, player) {
+    const directions = [
+      [1, 0], // vertical
+      [0, 1], // horizontal
+      [1, 1], // diagonal down-right
+      [1, -1], // diagonal down-left
+    ];
+
+    const playerCoords = Object.keys(board)
+      .filter((pos) => board[pos][0] === player)
+      .map((pos) => board[pos][1]);
+
+    for (const [dx, dy] of directions) {
+      for (const [x, y] of playerCoords) {
+        if (
+          playerCoords.some(([x1, y1]) => x1 === x + dx && y1 === y + dy) &&
+          playerCoords.some(
+            ([x2, y2]) => x2 === x + 2 * dx && y2 === y + 2 * dy
+          )
+        ) {
+          return true;
+        }
+      }
+    }
+    return false;
+  }
+
+  function isBoardFull(board) {
+    return Object.values(board).every((value) => value[0] !== "");
+  }
+
+  function restartGame() {
+    setGameOnGoing(true);
+    setCurrentPlayer("X");
+    setBoardMark(initialBoardState);
+    setWin(false);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="h-screen flex flex-col items-center justify-center gap-y-7">
+      {startBtn && (
+        <h1 className="text-3xl font-extrabold">Pyramid TicTacToe</h1>
+      )}
+      {startBtn && (
+        <Button name="startButton" onClick={handleStartClick} desc="Start" />
+      )}
+      {pyramid && (
+        <div>
+          <Board
+            boardMark={boardMark}
+            handlePlayerChoice={handlePlayerChoice}
+            win={win}
+          />
+          {/* <div className=" grid grid-rows-3 grid-cols-5 gap-1 items-center justify-center">
+          <button
+              type="button"
+              name="position1"
+              className="btn-primary col-start-3"
+              onClick={handlePlayerChoice}
+            >
+              {boardMark.position1}
+            </button>
+            <button
+              type="button"
+              name="position2"
+              className="btn-primary row-start-2 col-start-2"
+              onClick={handlePlayerChoice}
+            >
+              {boardMark.position2}
+            </button>
+            <button
+              type="button"
+              name="position3"
+              className="btn-primary row-start-2 col-start-3"
+              onClick={handlePlayerChoice}
+            >
+              {boardMark.position3}
+            </button>
+            <button
+              type="button"
+              name="position4"
+              className="btn-primary row-start-2 col-start-4"
+              onClick={handlePlayerChoice}
+            >
+              {boardMark.position4}
+            </button>
+            <button
+              type="button"
+              name="position5"
+              className="btn-primary row-start-3"
+              onClick={handlePlayerChoice}
+            >
+              {boardMark.position5}
+            </button>
+            <button
+              type="button"
+              name="position6"
+              className="btn-primary row-start-3"
+              onClick={handlePlayerChoice}
+            >
+              {boardMark.position6}
+            </button>
+            <button
+              type="button"
+              name="position7"
+              className="btn-primary row-start-3"
+              onClick={handlePlayerChoice}
+            >
+              {boardMark.position7}
+            </button>
+            <button
+              type="button"
+              name="position8"
+              className="btn-primary row-start-3"
+              onClick={handlePlayerChoice}
+            >
+              {boardMark.position8}
+            </button>
+            <button
+              type="button"
+              name="position9"
+              className="btn-primary row-start-3"
+              onClick={handlePlayerChoice}
+            >
+              {boardMark.position9}
+            </button>
+            </div> */}
+          <GameStatus
+            win={win}
+            gameOnGoing={gameOnGoing}
+            currentPlayer={currentPlayer}
+            restartGame={restartGame}
+          />
+        </div>
+      )}
     </div>
   );
 }
