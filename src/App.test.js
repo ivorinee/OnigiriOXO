@@ -11,13 +11,12 @@ import App from './App';
     buttons[7] - position 7
     buttons[8] - position 8
     buttons[9] - position 9
-     */
-
+*/
 
 test('loads title and start button', () => {
   render(<App />);
   
-  expect(screen.getByText('Pyramid TicTacToe')).toBeInTheDocument();
+  expect(screen.getByText('Pyramid')).toBeInTheDocument();
   expect(screen.getByText('Start')).toBeInTheDocument();
 });
 
@@ -25,7 +24,6 @@ beforeEach(() => {
   render(<App />);
   fireEvent.click(screen.getByText('Start'));
 });
-
 
 test('generates pyramid board on start', () => {
   const buttons = screen.getAllByRole('button');
