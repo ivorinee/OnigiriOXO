@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Pyramid-TicTacToe/static/css/main.ca3f95e2.css",
-    "main.js": "/Pyramid-TicTacToe/static/js/main.468a49ad.js",
-    "static/js/453.78094a94.chunk.js": "/Pyramid-TicTacToe/static/js/453.78094a94.chunk.js",
-    "static/media/redo-arrow.svg": "/Pyramid-TicTacToe/static/media/redo-arrow.342dffb75205013e446a1203b9f01c09.svg",
-    "index.html": "/Pyramid-TicTacToe/index.html",
-    "main.ca3f95e2.css.map": "/Pyramid-TicTacToe/static/css/main.ca3f95e2.css.map",
-    "main.468a49ad.js.map": "/Pyramid-TicTacToe/static/js/main.468a49ad.js.map",
-    "453.78094a94.chunk.js.map": "/Pyramid-TicTacToe/static/js/453.78094a94.chunk.js.map"
+    "main.css": "/OnigiriOXO/static/css/main.ca3f95e2.css",
+    "main.js": "/OnigiriOXO/static/js/main.a58f5677.js",
+    "static/js/453.78094a94.chunk.js": "/OnigiriOXO/static/js/453.78094a94.chunk.js",
+    "static/media/redo-arrow.svg": "/OnigiriOXO/static/media/redo-arrow.342dffb75205013e446a1203b9f01c09.svg",
+    "index.html": "/OnigiriOXO/index.html",
+    "main.ca3f95e2.css.map": "/OnigiriOXO/static/css/main.ca3f95e2.css.map",
+    "main.a58f5677.js.map": "/OnigiriOXO/static/js/main.a58f5677.js.map",
+    "453.78094a94.chunk.js.map": "/OnigiriOXO/static/js/453.78094a94.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ca3f95e2.css",
-    "static/js/main.468a49ad.js"
+    "static/js/main.a58f5677.js"
   ]
 }
