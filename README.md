@@ -4,11 +4,11 @@ This project was created with React and Tailwind CSS, and tested with React Test
 
 ## To Run the Web Application Locally
 
-Run `runApp.bat`.
+Run `runApp.bat` or `npm start` on file location in terminal.
 
 ## To Run the Test Cases
 
-Run `runTest.bat`.
+Run `runTest.bat` or `npm test` on file location in terminal.
 
 ## Project Structure
 
