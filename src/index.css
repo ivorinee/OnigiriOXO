@@ -12,7 +12,7 @@
 
 @layer components {
   .btn-primary {
-    @apply py-2 px-4 rounded-lg border-4 border-orange-600 font-bungee text-3xl text-blue-800;
+    @apply size-20 rounded-lg border-4 border-orange-600 font-bungee text-3xl text-blue-800;
   }
 }
 
@@ -30,10 +30,11 @@ h1 {
   }
 
   .small-redo {
-    @apply py-2 px-4;
+    @apply size-10;
   }
 
   .btn-primary {
-    @apply py-2 px-4 rounded-lg border-4 border-orange-600 font-bungee text-2xl text-blue-800;
+    @apply size-16 rounded-lg border-4 border-orange-600 font-bungee text-3xl text-blue-800;
   }
 }
+
