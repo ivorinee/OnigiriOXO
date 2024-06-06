@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/Pyramid-TicTacToe/static/css/main.18095a63.css",
-    "main.js": "/Pyramid-TicTacToe/static/js/main.965c44e6.js",
+    "main.css": "/Pyramid-TicTacToe/static/css/main.050e0639.css",
+    "main.js": "/Pyramid-TicTacToe/static/js/main.81442ef3.js",
     "static/js/453.78094a94.chunk.js": "/Pyramid-TicTacToe/static/js/453.78094a94.chunk.js",
+    "static/media/redo-arrow.svg": "/Pyramid-TicTacToe/static/media/redo-arrow.342dffb75205013e446a1203b9f01c09.svg",
     "index.html": "/Pyramid-TicTacToe/index.html",
-    "main.18095a63.css.map": "/Pyramid-TicTacToe/static/css/main.18095a63.css.map",
-    "main.965c44e6.js.map": "/Pyramid-TicTacToe/static/js/main.965c44e6.js.map",
+    "main.050e0639.css.map": "/Pyramid-TicTacToe/static/css/main.050e0639.css.map",
+    "main.81442ef3.js.map": "/Pyramid-TicTacToe/static/js/main.81442ef3.js.map",
     "453.78094a94.chunk.js.map": "/Pyramid-TicTacToe/static/js/453.78094a94.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.18095a63.css",
-    "static/js/main.965c44e6.js"
+    "static/css/main.050e0639.css",
+    "static/js/main.81442ef3.js"
   ]
 }
