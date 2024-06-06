@@ -16,7 +16,7 @@ import App from './App';
 test('loads title and start button', () => {
   render(<App />);
   
-  expect(screen.getByText('Pyramid')).toBeInTheDocument();
+  expect(screen.getByText('Onigiri OXO')).toBeInTheDocument();
   expect(screen.getByText('Start')).toBeInTheDocument();
 });
 
