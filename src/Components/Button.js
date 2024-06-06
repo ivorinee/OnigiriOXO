@@ -3,7 +3,7 @@ function Button({ name, className = "", onClick, desc }) {
       <button
         type="button"
         name={name}
-        className={`rounded-full place-self-center bg-neutral-600 w-40 h-14 font-semibold font-serif text-white text-l shadow-sm hover:bg-neutral-400 ${className}`}
+        className={`rounded-full place-self-center bg-orange-600 w-40 h-14 text-orange-100 font-extrabold text-xl shadow-sm hover:bg-orange-300 hover:text-orange-600 ${className}`}
         onClick={onClick}
       >
         {desc}

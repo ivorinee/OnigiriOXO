@@ -2,12 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Lora:ital,wght@0,400..700;1,400..700&family=Shrikhand&display=swap');
+
 @layer components {
   .btn-primary {
-    @apply size-20 border-4 border-neutral-600 text-2xl font-bold text-neutral-600;
+    @apply size-20 rounded-lg border-4 border-orange-600 font-bungee text-3xl text-blue-800 ;
   }
 }
 
 * {
-    @apply font-serif
+    @apply font-lora
    }
+
+h1 {
+    @apply font-shrikhand text-4xl text-blue-800
+}
+

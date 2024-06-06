@@ -96,102 +96,28 @@ function App() {
   }
 
   return (
-    <div className="h-screen flex flex-col items-center justify-center gap-y-7">
-      {startBtn && (
-        <h1 className="text-3xl font-extrabold">Pyramid TicTacToe</h1>
-      )}
-      {startBtn && (
-        <Button name="startButton" onClick={handleStartClick} desc="Start" />
-      )}
-      {pyramid && (
-        <div>
-          <Board
-            boardMark={boardMark}
-            handlePlayerChoice={handlePlayerChoice}
-            win={win}
-          />
-          {/* <div className=" grid grid-rows-3 grid-cols-5 gap-1 items-center justify-center">
-          <button
-              type="button"
-              name="position1"
-              className="btn-primary col-start-3"
-              onClick={handlePlayerChoice}
-            >
-              {boardMark.position1}
-            </button>
-            <button
-              type="button"
-              name="position2"
-              className="btn-primary row-start-2 col-start-2"
-              onClick={handlePlayerChoice}
-            >
-              {boardMark.position2}
-            </button>
-            <button
-              type="button"
-              name="position3"
-              className="btn-primary row-start-2 col-start-3"
-              onClick={handlePlayerChoice}
-            >
-              {boardMark.position3}
-            </button>
-            <button
-              type="button"
-              name="position4"
-              className="btn-primary row-start-2 col-start-4"
-              onClick={handlePlayerChoice}
-            >
-              {boardMark.position4}
-            </button>
-            <button
-              type="button"
-              name="position5"
-              className="btn-primary row-start-3"
-              onClick={handlePlayerChoice}
-            >
-              {boardMark.position5}
-            </button>
-            <button
-              type="button"
-              name="position6"
-              className="btn-primary row-start-3"
-              onClick={handlePlayerChoice}
-            >
-              {boardMark.position6}
-            </button>
-            <button
-              type="button"
-              name="position7"
-              className="btn-primary row-start-3"
-              onClick={handlePlayerChoice}
-            >
-              {boardMark.position7}
-            </button>
-            <button
-              type="button"
-              name="position8"
-              className="btn-primary row-start-3"
-              onClick={handlePlayerChoice}
-            >
-              {boardMark.position8}
-            </button>
-            <button
-              type="button"
-              name="position9"
-              className="btn-primary row-start-3"
-              onClick={handlePlayerChoice}
-            >
-              {boardMark.position9}
-            </button>
-            </div> */}
-          <GameStatus
-            win={win}
-            gameOnGoing={gameOnGoing}
-            currentPlayer={currentPlayer}
-            restartGame={restartGame}
-          />
-        </div>
-      )}
+    <div className="h-screen flex items-center justify-center bg-orange-200">
+      <div className="w-1/2 h-2/3 flex flex-col items-center justify-center gap-y-7 rounded-3xl bg-white drop-shadow-2xl drop-shadow-white">
+        {startBtn && <h1>Pyramid TicTacToe</h1>}
+        {startBtn && (
+          <Button name="startButton" onClick={handleStartClick} desc="Start" />
+        )}
+        {pyramid && (
+          <div>
+            <Board
+              boardMark={boardMark}
+              handlePlayerChoice={handlePlayerChoice}
+              win={win}
+            />
+            <GameStatus
+              win={win}
+              gameOnGoing={gameOnGoing}
+              currentPlayer={currentPlayer}
+              restartGame={restartGame}
+            />
+          </div>
+        )}
+      </div>
     </div>
   );
 }

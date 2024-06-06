@@ -1,11 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        shrikhand: ["Shrikhand", "sans-serif"],
+        lora: ["Lora", "sans"],
+        bungee: ["Bungee", "sans-serif"]
+      }
+    },
   },
   plugins: [],
-}
-
+};
