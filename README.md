@@ -1,10 +1,10 @@
-# Pyramid Tic Tac Toe
+# Onigiri OXO
 
 This project was created with React and Tailwind CSS, and tested with React Testing Library.
 
 ## To Run the Web Application
 
-Access [here](https://ivorinee.github.io/Pyramid-TicTacToe), or run `runApp.bat` or `npm start` on file location in terminal.
+Access [here](https://ivorinee.github.io/OnigiriOXO/), or run `runApp.bat` or `npm start` on file location in terminal.
 
 ## To Run the Test Cases
 
@@ -17,4 +17,4 @@ Run `runTest.bat` or `npm test` on file location in terminal.
 - **Styles**: Custom CSS styles are defined in `index.css`.
 - **Tests**: Test cases are defined in `App.test.js`.
 
-Enjoy playing Pyramid Tic Tac Toe!
+Enjoy playing Onigiri OXO!
