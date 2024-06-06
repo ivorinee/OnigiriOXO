@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "//ivorinee.github.io/Pyramid-TicTacToe/static/css/main.d8a2a332.css",
-    "main.js": "//ivorinee.github.io/Pyramid-TicTacToe/static/js/main.3883fd7c.js",
-    "static/js/453.78094a94.chunk.js": "//ivorinee.github.io/Pyramid-TicTacToe/static/js/453.78094a94.chunk.js",
-    "index.html": "//ivorinee.github.io/Pyramid-TicTacToe/index.html",
-    "main.d8a2a332.css.map": "//ivorinee.github.io/Pyramid-TicTacToe/static/css/main.d8a2a332.css.map",
-    "main.3883fd7c.js.map": "//ivorinee.github.io/Pyramid-TicTacToe/static/js/main.3883fd7c.js.map",
-    "453.78094a94.chunk.js.map": "//ivorinee.github.io/Pyramid-TicTacToe/static/js/453.78094a94.chunk.js.map"
+    "main.css": "/Pyramid-TicTacToe/static/css/main.18095a63.css",
+    "main.js": "/Pyramid-TicTacToe/static/js/main.965c44e6.js",
+    "static/js/453.78094a94.chunk.js": "/Pyramid-TicTacToe/static/js/453.78094a94.chunk.js",
+    "index.html": "/Pyramid-TicTacToe/index.html",
+    "main.18095a63.css.map": "/Pyramid-TicTacToe/static/css/main.18095a63.css.map",
+    "main.965c44e6.js.map": "/Pyramid-TicTacToe/static/js/main.965c44e6.js.map",
+    "453.78094a94.chunk.js.map": "/Pyramid-TicTacToe/static/js/453.78094a94.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8a2a332.css",
-    "static/js/main.3883fd7c.js"
+    "static/css/main.18095a63.css",
+    "static/js/main.965c44e6.js"
   ]
 }
