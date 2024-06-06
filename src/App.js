@@ -21,6 +21,7 @@ function App() {
   const [gameOnGoing, setGameOnGoing] = useState(false);
   const [pyramid, setPyramid] = useState(false);
   const [currentPlayer, setCurrentPlayer] = useState("X");
+  const [prevMove, setPrevMove] = useState("");
   const [boardMark, setBoardMark] = useState(initialBoardState);
   const [win, setWin] = useState(false);
 
@@ -35,24 +36,43 @@ function App() {
     setBoardMark((prevValue) => {
       // Check whether grid is empty
       if (prevValue[pos][0] === "") {
-        const newButtonMark = {
+        const newBoardMark = {
           ...prevValue,
           [pos]: [currentPlayer, prevValue[pos][1]],
         };
 
         // Check whether player has won or board is full
-        if (checkWin(newButtonMark, currentPlayer)) {
+        if (checkWin(newBoardMark, currentPlayer)) {
           setGameOnGoing(false);
           setWin(true);
-        } else if (isBoardFull(newButtonMark)) {
+        } else if (isBoardFull(newBoardMark)) {
           setGameOnGoing(false);
         } else {
           setCurrentPlayer((prevPlayer) => (prevPlayer === "X" ? "O" : "X"));
+          setPrevMove(pos);
         }
 
-        return newButtonMark;
+        return newBoardMark;
       } else {
         return prevValue;
+      }
+    });
+  }
+
+  function handleUndo() {
+    setBoardMark((prevValue) => {
+      // Check if undo has been done
+      if (boardMark[prevMove][0] === "") {
+        return boardMark;
+      } else {
+        // Removes mark on square
+        const newBoardMark = {
+          ...prevValue,
+          [prevMove]: ["", prevValue[prevMove][1]],
+        };
+        setCurrentPlayer((prevPlayer) => (prevPlayer === "X" ? "O" : "X"));
+
+        return newBoardMark;
       }
     });
   }
@@ -107,6 +127,7 @@ function App() {
             <Board
               boardMark={boardMark}
               handlePlayerChoice={handlePlayerChoice}
+              handleUndo={handleUndo}
               win={win}
             />
             <GameStatus
