@@ -4,10 +4,10 @@ function Board({ boardMark, handlePlayerChoice, win, handleUndo }) {
   const isBoardEmpty = Object.values(boardMark).every((pos) => pos[0] === "");
 
   return (
-    <div className=" grid grid-rows-3 grid-cols-5 gap-1 items-center justify-center">
+    <div className="grid grid-rows-3 grid-cols-5 gap-1 items-center justify-center">
       <button
         name="undo"
-        className="col-span-1 size-12 place-self-center"
+        className="col-span-1 size-12 place-self-center small-redo"
         onClick={handleUndo}
         disabled={isBoardEmpty || win}
       >

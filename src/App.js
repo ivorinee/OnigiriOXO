@@ -116,9 +116,14 @@ function App() {
   }
 
   return (
-    <div className="h-screen flex items-center justify-center bg-orange-200">
-      <div className="w-1/2 h-2/3 flex flex-col items-center justify-center gap-y-7 rounded-3xl bg-white drop-shadow-2xl drop-shadow-white">
-        {startBtn && <h1>Pyramid TicTacToe</h1>}
+    <div className="w-screen h-screen flex items-center justify-center bg-orange-200">
+      <div className="w-1/2 h-2/3 flex flex-col items-center justify-center gap-y-7 p-3 rounded-3xl bg-white drop-shadow-2xl small-container">
+        {startBtn && (
+          <div>
+            <h1>Pyramid</h1>
+            <h1>TicTacToe</h1>
+          </div>
+        )}
         {startBtn && (
           <Button name="startButton" onClick={handleStartClick} desc="Start" />
         )}
